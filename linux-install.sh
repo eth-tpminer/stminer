@@ -271,8 +271,8 @@ installapp() {
 
     checkProcess "stminer"
     if [ $? -eq 1 ]; then
-        colorEcho ${RED} "发现正在运行的KTMinerProxy, 需要停止才可继续安装。"
-        colorEcho ${YELLOW} "输入1停止正在运行的KTMinerProxy并且继续安装, 输入2取消安装。"
+        colorEcho ${RED} "发现正在运行的stminer, 需要停止才可继续安装。"
+        colorEcho ${YELLOW} "输入1停止正在运行的stminer并且继续安装, 输入2取消安装。"
 
         read -p "$(echo -e "请选择[1-2]：")" choose
         case $choose in
@@ -410,7 +410,7 @@ lookport() {
 }
 
 echo "-------------------------------------------------------"
-colorEcho ${GREEN} "欢迎使用KTMinerProxy安装工具, 请输入操作号继续。"
+colorEcho ${GREEN} "欢迎使用stminerProxy安装工具, 请输入操作号继续。"
 
 echo ""
 echo "1、安装"
