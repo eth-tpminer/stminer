@@ -78,7 +78,7 @@ setConfig() {
 
         chmod -R 777 $PATH_CONFIG
 
-        echo "KT_START_PORT=16777" >> $PATH_CONFIG
+        echo "ST_START_PORT=16777" >> $PATH_CONFIG
     fi
 
     TARGET_VALUE="$1=$2"
@@ -404,7 +404,7 @@ set_port() {
 }
 
 lookport() {
-    port=$(getConfig "KT_START_PORT")
+    port=$(getConfig "ST_START_PORT")
 
     colorEcho $GREEN "当前WEB访问端口${port}"
 }
