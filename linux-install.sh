@@ -2,7 +2,7 @@
 # Author: stminer
 # github: https://github.com/stminer
 
-VERSION="2.3.0"
+VERSION="2.3.3"
 
 DOWNLOAD_HOST="https://github.com/stminer/stminer/raw/main/Linux-64"
 
@@ -180,7 +180,7 @@ start() {
 update() {
     turn_off
 
-    installapp 2.3.0
+    installapp 2.3.3
 }
 
 turn_on() {
@@ -434,7 +434,7 @@ echo ""
 colorEcho ${YELLOW} "如果在此之前是手动安装的程序，请自己手动退出程序后再执行此脚本，否则容易发生冲突，所有操作尽量通过此脚本完成。"
 echo "-------------------------------------------------------"
 
-read -p "$(echo -e "请选择[1-14]：")" choose
+read -p "$(echo -e "请选择[1-17]：")" choose
 
 case $choose in
 1)
